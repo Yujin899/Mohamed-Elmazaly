@@ -13,15 +13,16 @@ import { motion } from "framer-motion";
 export default class AutoPlay extends Component {
   render() {
     const settings = {
-      dots: true,
+      dots: false,
       infinite: true,
       slidesToShow: 1,
       slidesToScroll: 1,
       autoplay: true,
-      speed: 2000,
-      autoplaySpeed: 2000,
+      speed: 1000,
+      autoplaySpeed: 3000,
       cssEase: "linear",
     };
+
     return (
       <motion.div
         className="gallery"
@@ -33,13 +34,13 @@ export default class AutoPlay extends Component {
           <div>
             <Image className="g-image" src={two} alt="mohamed hamed" />
           </div>
-
           <div>
             <Image className="g-image" src={one} alt="mohamed hamed" />
           </div>
           <div>
             <Image className="g-image" src={three} alt="mohamed hamed" />
           </div>
+
           <div>
             <Image className="g-image" src={four} alt="mohamed hamed" />
           </div>
